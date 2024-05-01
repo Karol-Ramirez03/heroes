@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="trabajojs/heroes.js" defer></script>
+</head>
+<body>
+    <main class="contenedor">
+        <h1>heroes</h1>
+        <form class="contenedor_input">
+            <!-- input del nombre -->
+            <label for="nombre_heroe">
+                <span>¿cual es el nombre de tu heroe favorito?</span>
+                <input type="text" name="nombre_heroe" id="nombre_heroe" placeholder="nombre heroe" class="datos">
+            </label>
+            <!-- input de edad -->
+            <label for="edad">
+                <span>¿cual es la edad de tu heroe?</span>
+                <input type="number" name="edad" id="edad" placeholder="edad" class="datos">
+            </label>
+            <!-- input del traje -->
+            <label for="suit">
+                <span>¿cuales trajes ha usado superheroe?</span>
+                <!-- input para quitar cuadro de traje -->
+                <button class="menos">-</button> 
+                <input type="text" name="suit" id="suit" placeholder="traje" class="datos">
+                <!-- button para sumar cuadro de traje -->
+                <button class="mas">+</button>
+            </label>
+            <!-- input del sobre nombre -->
+            <label for="code_name">
+                <span>¿cual es el nombre de superheroe?</span>
+                <input type="text" name="code_name" id="code_name" placeholder="superheroe" class="datos">
+            </label>
+            <!-- input de la imagen -->
+            <label for="imagen">
+                <span>agrega una imagen de tu heroe</span>
+                <input type="file" name="imagen" id="imagen" placeholder="imagen" class="datos">
+            </label>
+            <!-- input de las posisicion -->
+            <div class="posicion">
+                <label for="longitud">
+                    <span>Longitud:</span>
+                    <input type="number" name="longitud" id="longitud" placeholder="longitud" class="datos">
+                </label>
+                <label for="latitud">
+                    <span>Latitud:</span>
+                    <input type="number" name="latitud" id="latitud" placeholder="latitud" class="datos">
+                </label>
+            </div>
+            <!-- button de agregar -->
+            <div class="contenedor_button">
+                <button class="agregar">Add</button>
+            </div>
+            
+        </form>
+        <!-- contenedor para mostrar los heroes -->
+        <div class="contenedor_heroe">
+            
+        </div>
+    </main>
+</body>
+</html>

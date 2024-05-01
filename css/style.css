@@ -1,0 +1,90 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items:center;
+    gap: 4px;
+    width: 100%;
+    height: auto;
+}
+.contenedor_input {
+    display:flex;
+    flex-direction: column;
+    padding: 1%;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    font-size: 1.5vw;
+    border-radius: 40px;
+    width: 50%;
+    height: auto;
+    gap: 5px;
+    background-color: rgba(70, 69, 69, 0.197);
+}
+input {
+    border-radius: 4px;
+    background-color: rgba(79, 78, 78, 0.366);
+    border: transparent;
+    /* width: 35%; */
+}
+.contenedor_button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.agregar {
+    width: 10%;
+    border-radius: 5px;
+    border: transparent;
+    background-color: rgb(215, 148, 60);
+    box-shadow: 1px 2px 2px 1px ;
+}
+.contenedor_heroe {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2%;
+    /* background-color: aqua; */
+    width: 100%;
+}
+.div_heroe{
+    display: flex;
+    margin-top: 1%;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(6, 97, 109, 0.329);
+    padding: 2%;
+    border-radius: 10px;
+    width: 20%;
+    
+}
+.div_heroe img{
+    width: 80%;
+    height: auto;
+    border-radius: 5px;
+}
+@media (max-width: 1000px) {
+    .contenedor_input {
+        font-size: 4vw;
+        width: 90%; 
+    }
+    input {
+        width: 40%;
+    }
+    .div_heroe{
+        display: flex;
+        margin-top: 1%;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgba(6, 97, 109, 0.329);
+        padding: 2%;
+        border-radius: 10px;
+        width: 30%;
+        font-size: 3vw;
+    }
+}
